@@ -1,6 +1,6 @@
 /**
  * COLLAB AI LEASING ASSISTANT — 12-Stage Journey Interactive Demo
- * Each stage has: title, painPoint, howAIHelps, actions, value, and WhatsApp chat messages
+ * Each stage has: title, painPoint, howAIHelps, actions, value, and SMS chat messages
  */
 
 const JOURNEY_STAGES = [
@@ -9,7 +9,7 @@ const JOURNEY_STAGES = [
     title: "Need Analysis",
     emoji: "🎯",
     painPoint: "Renters waste hours browsing thousands of listings that don't match their needs, budget, or situation — especially international renters who don't know where to start.",
-    howHelps: "Collab AI builds a comprehensive renter profile through natural conversation — including budget, location, lifestyle, timeline, immigration and credit situation. Every recommendation is personalized to this profile.",
+    howHelps: "AskDwell builds a comprehensive renter profile through natural conversation — including budget, location, lifestyle, timeline, immigration and credit situation. Every recommendation is personalized to this profile.",
     actions: [
       "Build personalized renter profile",
       "Assess budget and location preferences",
@@ -18,13 +18,13 @@ const JOURNEY_STAGES = [
     ],
     value: "100% personalized recommendations from day one. Your profile is private and never shared or sold.",
     chat: [
-      { from: "ai", text: "Hey! 👋 I'm your Collab AI Leasing Assistant. Let's find your perfect rental. What city are you looking in?" },
+      { from: "ai", text: "Hey! 👋 I'm your AskDwell Leasing Assistant. Let's find your perfect rental. What city are you looking in?" },
       { from: "user", text: "San Francisco Bay Area, looking to move in July" },
       { from: "ai", text: "Great choice! 🌉 What's your monthly budget range? And will you be living alone or with roommates?" },
       { from: "user", text: "Around $2,500/month, open to roommates" },
       { from: "ai", text: "Got it! A few more questions:\n\n1. Any preferred neighborhoods?\n2. Do you need parking?\n3. Pet-friendly?\n4. Are you a US citizen or international renter?\n\nThis helps me find listings that actually match your life 🎯" },
       { from: "user", text: "SOMA or Mission. No car. No pets. I'm an international student from China." },
-      { from: "ai", text: "✅ Profile created!\n\n📋 Your Renter Profile:\n• Budget: $2,500/mo\n• Area: SOMA, Mission\n• Move-in: July 2025\n• Roommate: Open\n• International: Yes (student visa)\n• Parking: No\n• Pets: No\n\nI'll tailor everything to your situation — including ITIN and international renter guidance. Let's start! 🚀" }
+      { from: "ai", text: "✅ Profile created!\n\n📋 Your Renter Profile:\n• Budget: $2,500/mo\n• Area: SOMA, Mission\n• Move-in: July 2026\n• Roommate: Open\n• International: Yes (student visa)\n• Parking: No\n• Pets: No\n\nI'll tailor everything to your situation — including ITIN and international renter guidance. Let's start! 🚀" }
     ]
   },
   {
@@ -32,7 +32,7 @@ const JOURNEY_STAGES = [
     title: "Roommate Matching",
     emoji: "👥",
     painPoint: "Finding compatible roommates is stressful and risky. Craigslist posts, random Facebook groups — no structured way to find someone who matches your lifestyle.",
-    howHelps: "Collab AI facilitates AI-powered roommate matching entirely within WhatsApp. It collects lifestyle preferences, daily schedule, cleanliness standards, and budget — then generates compatibility scores with secure mutual opt-in introductions.",
+    howHelps: "AskDwell facilitates AI-powered roommate matching entirely via SMS. It collects lifestyle preferences, daily schedule, cleanliness standards, and budget — then generates compatibility scores with secure mutual opt-in introductions.",
     actions: [
       "Collect lifestyle & schedule preferences",
       "Match against renters in same area/budget",
@@ -53,13 +53,13 @@ const JOURNEY_STAGES = [
     title: "Rental Searching",
     emoji: "🔍",
     painPoint: "Renters spend 40+ hours navigating fragmented platforms. Fake listings cost US renters an estimated $5.2B annually. No unified way to compare and track options.",
-    howHelps: "Collab AI aggregates listings from all major platforms, filters by your profile, flags potential scams through reverse image search and price anomaly detection, and ranks each listing by fit score.",
+    howHelps: "AskDwell aggregates listings from all major platforms, filters by your profile, flags potential scams through reverse image search and price anomaly detection, and ranks each listing by fit score.",
     actions: [
       "Aggregate listings from all platforms",
       "Filter based on renter profile",
       "Flag potential scam listings",
       "Rank by personalized fit score",
-      "Send daily digest in WhatsApp"
+      "Send daily digest via SMS"
     ],
     value: "See only listings that match your needs. Scams flagged before you waste time. Daily digest keeps you current without endless scrolling.",
     chat: [
@@ -73,7 +73,7 @@ const JOURNEY_STAGES = [
     title: "Reaching Out",
     emoji: "📧",
     painPoint: "Crafting personalized outreach messages for every listing is time-consuming. Following up when there's no response is tedious. Many opportunities are lost.",
-    howHelps: "Collab AI drafts personalized outreach messages for each listing. Messages are sent only after your explicit approval. The AI follows up automatically if there's no response within 48 hours.",
+    howHelps: "AskDwell drafts personalized outreach messages for each listing. Messages are sent only after your explicit approval. The AI follows up automatically if there's no response within 48 hours.",
     actions: [
       "Draft personalized outreach messages",
       "Send only with your explicit approval",
@@ -93,7 +93,7 @@ const JOURNEY_STAGES = [
     title: "Touring & Booking",
     emoji: "🗓️",
     painPoint: "Scheduling viewings across multiple listings is chaotic. Renters often miss red flags during tours. Remote renters can't visit in person.",
-    howHelps: "Collab AI syncs with your calendar to suggest available time slots and book tours automatically. It provides pre-tour briefings, red flags to look for, and post-tour comparison across visits.",
+    howHelps: "AskDwell syncs with your calendar to suggest available time slots and book tours automatically. It provides pre-tour briefings, red flags to look for, and post-tour comparison across visits.",
     actions: [
       "Sync with your calendar",
       "Schedule tour appointments",
@@ -113,7 +113,7 @@ const JOURNEY_STAGES = [
     title: "Leasing Application",
     emoji: "📋",
     painPoint: "Every property has different application requirements. International renters face extra barriers — ITIN, overseas income, no US credit history. Tracking multiple applications is a mess.",
-    howHelps: "Collab AI provides application checklists based on property type, helps prepare documents, drafts renter cover letters, and tracks multiple applications. Special guidance for international renters.",
+    howHelps: "AskDwell provides application checklists based on property type, helps prepare documents, drafts renter cover letters, and tracks multiple applications. Special guidance for international renters.",
     actions: [
       "Property-specific application checklists",
       "Document preparation guidance",
@@ -134,7 +134,7 @@ const JOURNEY_STAGES = [
     emoji: "📄",
     featured: true,
     painPoint: "Lease agreements are long, complex legal documents full of hidden fees, auto-renewal traps, and unusual liability clauses. Most renters sign without understanding what they're agreeing to.",
-    howHelps: "Upload your lease directly in WhatsApp. Collab AI translates the entire lease into plain English, flags hidden fees, identifies auto-renewal traps, provides tenant rights guidance by state, and identifies negotiable terms.",
+    howHelps: "Upload your lease directly via SMS. AskDwell translates the entire lease into plain English, flags hidden fees, identifies auto-renewal traps, provides tenant rights guidance by state, and identifies negotiable terms.",
     actions: [
       "Translate full lease to plain English",
       "Flag hidden fees and unusual charges",
@@ -155,7 +155,7 @@ const JOURNEY_STAGES = [
     title: "Lease Negotiation",
     emoji: "🤝",
     painPoint: "Most renters don't know they can negotiate lease terms. They lack market knowledge and negotiation skills. Verbal agreements disappear — there's no paper trail.",
-    howHelps: "Collab AI provides negotiation strategy based on market conditions, landlord type, and property specifics. It coaches you through the process and drafts counter-proposals you can send directly.",
+    howHelps: "AskDwell provides negotiation strategy based on market conditions, landlord type, and property specifics. It coaches you through the process and drafts counter-proposals you can send directly.",
     actions: [
       "Market-based negotiation strategy",
       "Counter-proposal drafting",
@@ -174,7 +174,7 @@ const JOURNEY_STAGES = [
     title: "Lease Signing",
     emoji: "✍️",
     painPoint: "After negotiation, renters need to verify all agreed terms are actually in the final documents. Important dates and deadlines get lost after signing.",
-    howHelps: "Collab AI guides you through the e-signature process, verifies all negotiated terms are reflected in the final lease, and creates a comprehensive summary card with key dates and reminders.",
+    howHelps: "AskDwell guides you through the e-signature process, verifies all negotiated terms are reflected in the final lease, and creates a comprehensive summary card with key dates and reminders.",
     actions: [
       "E-signature process guidance",
       "Verify negotiated terms in final lease",
@@ -193,7 +193,7 @@ const JOURNEY_STAGES = [
     title: "Move-in Payment",
     emoji: "💳",
     painPoint: "Move-in costs add up fast — first month, last month, security deposit, fees. Wire transfer scams are rampant. International renters face additional complications with currency and bank coordination.",
-    howHelps: "Collab AI provides a full upfront cost breakdown, verifies payment instructions against known scam patterns, and provides guidance on acceptable payment methods and receipt documentation.",
+    howHelps: "AskDwell provides a full upfront cost breakdown, verifies payment instructions against known scam patterns, and provides guidance on acceptable payment methods and receipt documentation.",
     actions: [
       "Full upfront cost breakdown",
       "Verify payment instructions (anti-scam)",
@@ -213,9 +213,9 @@ const JOURNEY_STAGES = [
     title: "Move-in Checklist",
     emoji: "✅",
     painPoint: "There's so much to do before and during move-in — keys, utilities, insurance, inspections, address changes. Things slip through the cracks.",
-    howHelps: "Collab AI delivers an interactive move-in checklist in WhatsApp that you complete by tapping items. Covers everything from landlord handoffs to utility setup and documentation.",
+    howHelps: "AskDwell delivers an interactive move-in checklist via SMS that you complete by tapping items. Covers everything from landlord handoffs to utility setup and documentation.",
     actions: [
-      "Interactive WhatsApp checklist",
+      "Interactive SMS checklist",
       "Landlord handoff verification",
       "Utility and insurance setup",
       "Move-in photo documentation",
@@ -233,7 +233,7 @@ const JOURNEY_STAGES = [
     title: "Lease Termination + Deposit",
     emoji: "💰",
     painPoint: "Renters lose billions in security deposits due to unfair deductions. Most don't know their state's deposit return laws, timelines, or dispute options.",
-    howHelps: "Collab AI supports lease termination with state-specific notice requirements, move-out inspection preparation, security deposit return tracking, and dispute playbook including demand letters and small claims guidance.",
+    howHelps: "AskDwell supports lease termination with state-specific notice requirements, move-out inspection preparation, security deposit return tracking, and dispute playbook including demand letters and small claims guidance.",
     actions: [
       "State-specific notice requirements",
       "Move-out notice drafting",

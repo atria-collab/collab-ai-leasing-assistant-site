@@ -119,7 +119,7 @@ function initJourneyDemo() {
         <p class="info-text">${stage.painPoint}</p>
       </div>
       <div class="info-block">
-        <div class="info-label">How Collab AI Helps</div>
+        <div class="info-label">How AskDwell Helps</div>
         <p class="info-text">${stage.howHelps}</p>
       </div>
       <div class="info-block">
@@ -263,8 +263,8 @@ function initForm() {
 
       const payload = {
         access_key: key,
-        subject: "New Sweepstakes Entry — Collab AI Leasing Assistant 🎉",
-        from_name: "Collab AI Sweepstakes",
+        subject: "New Sweepstakes Entry — AskDwell Leasing Assistant 🎉",
+        from_name: "AskDwell Sweepstakes",
         replyto: email,
         name: form.querySelector('[name="name"]').value.trim(),
         email,
