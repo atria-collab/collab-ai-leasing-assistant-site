@@ -38,7 +38,7 @@
       <a href="#benefits">Benefits</a>
       <a href="#journey">Renter Journey</a>
       <a href="#compare">Compare</a>
-      
+      <a href="#sweepstakes" class="nav-cta">Join Sweepstakes</a>
     </div>
     <button class="nav-hamburger" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
@@ -65,7 +65,7 @@
       <p class="hero-subtitle fade-in-delay">From understanding housing needs and matching with roommates, to finding the right place, contacting landlords, reviewing leases, preventing payment scams, preparing for move-in, and getting your deposit back — AskDwell helps renters navigate every stage of the rental lifecycle with personalized AI support directly via SMS.</p>
       <div class="hero-promise fade-in-delay">🔒 No app. No hidden fees. No data sharing. Ever.</div>
       <div class="hero-actions fade-in-delay">
-        
+        <a href="#sweepstakes" class="btn btn-primary">🎉 Join the Sweepstakes</a>
         <a href="#journey" class="btn btn-outline">🗺️ Explore the Renter Journey</a>
       </div>
       <div class="hero-trust fade-in-delay">
@@ -352,6 +352,99 @@
   </div>
 </section>
 
+<!-- ======== SWEEPSTAKES FORM ======== -->
+<section class="form-section" id="sweepstakes">
+  <div class="container">
+    <div class="form-container">
+      <div class="section-label fade-in" style="text-align:center">Sweepstakes</div>
+      <h2 class="section-title fade-in" style="text-align:center">Join the AskDwell<br><span class="gradient-text">Sweepstakes</span></h2>
+
+      <div class="prize-card fade-in">
+        <h3 class="prize-title">First 200 Winners — 3 Months for $1</h3>
+        <p class="prize-desc">The first 200 winners will have the opportunity to use AskDwell for 3 months at the price of $1. Full access to all 12 stages of the renter journey.</p>
+        <div class="prize-features">
+          <span class="prize-feat">📄 AI Lease Review</span>
+          <span class="prize-feat">👥 Roommate Matching</span>
+          <span class="prize-feat">💰 Deposit Guidance</span>
+          <span class="prize-feat">🔍 Scam Detection</span>
+          <span class="prize-feat">📋 Full 12-Stage Journey</span>
+        </div>
+      </div>
+
+      <div class="form-card fade-in">
+        <form id="sweepstakes-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" placeholder="Your full name" required>
+              <span class="form-error-msg">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" placeholder="you@example.com" required>
+              <span class="form-error-msg">Please enter a valid email address.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number <span class="optional">(optional)</span></label>
+              <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label>City / Rental Market *</label>
+              <input type="text" name="city" placeholder="e.g. San Francisco, NYC" required>
+              <span class="form-error-msg">Please enter your city.</span>
+            </div>
+          </div>
+          <div class="form-row-full">
+            <div class="form-group">
+              <label>Are you currently searching for housing? *</label>
+              <select name="housing" required>
+                <option value="">Select one...</option>
+                <option value="yes">Yes, actively searching</option>
+                <option value="soon">Planning to search soon</option>
+                <option value="no">Not currently searching</option>
+              </select>
+              <span class="form-error-msg">Please select an option.</span>
+            </div>
+          </div>
+
+          <div class="form-checkboxes">
+            <label class="form-check">
+              <input type="checkbox" id="tc_check" required>
+              <span class="form-check-text">I have read and agree to the <a href="terms.html" target="_blank">Sweepstakes Terms & Conditions</a>. *</span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox" id="privacy_check" required>
+              <span class="form-check-text">I understand that AskDwell will collect and process my information in accordance with its <a href="privacy.html" target="_blank">Privacy Policy</a>. *</span>
+            </label>
+            <label class="form-check">
+              <input type="checkbox" id="email_check" required>
+              <span class="form-check-text">I agree to receive emails from AskDwell regarding AskDwell, sweepstakes updates, and related services. *</span>
+            </label>
+          </div>
+
+          <!-- Cloudflare Turnstile — replace sitekey with your actual key -->
+          <div class="cf-turnstile-wrap">
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAADGjZ9OzUkVWWOPd" data-theme="dark"></div>
+          </div>
+
+          <button type="submit" class="form-submit-btn" id="form-submit-btn">🎉 Enter Sweepstakes</button>
+          <p class="no-purchase">No purchase necessary. See <a href="terms.html" style="color:var(--primary)">Terms & Conditions</a> for full details.</p>
+        </form>
+      </div>
+
+      <div class="form-success fade-in">
+        <div class="success-icon">🎉</div>
+        <h3 class="success-title">You're In!</h3>
+        <p class="success-desc">Thank you for your interest in AskDwell! Check your inbox to verify your email address and complete your sweepstakes registration. Only verified emails will be included in the official sweepstakes list.</p>
+        <p class="success-desc" style="margin-top:16px;font-size:13px;">Questions? Contact us at <a href="mailto:hello@askdwell.ai" style="color:var(--primary)">hello@askdwell.ai</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== PRIVACY TRUST ======== -->
 <section class="section" id="trust">
   <div class="container">
     <div class="section-label fade-in" style="text-align:center">Privacy & Trust</div>
